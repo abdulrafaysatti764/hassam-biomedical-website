@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hassam Shamsher - Biomedical Engineer | Medical & Laboratory Equipment Solutions">
+<title>Hassam Shamsher | Biomedical Engineer</title>
+<style>
+:root{
+  --navy:#0b1f33;
+  --blue:#0b82d8;
+  --cyan:#39bde6;
+  --light:#f5f9fc;
+  --text:#26384a;
+  --muted:#6a7b8c;
+  --line:#e2eaf0;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:auto}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:25px;font-weight:900;color:var(--navy)}
+.brand span{color:var(--blue)}
+nav{display:flex;align-items:center;gap:28px}
+nav a{font-size:14px;font-weight:700;color:#415366}
+nav a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:#fff!important;padding:11px 17px;border-radius:8px}
+.menu{display:none;background:none;border:0;font-size:28px;color:var(--navy)}
+
+/* Hero */
+.hero{background:linear-gradient(118deg,#eef8fd 0%,#fff 62%);padding:88px 0 78px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.6px;color:var(--blue)}
+h1{font-size:58px;line-height:1.05;letter-spacing:-2px;color:var(--navy);margin:14px 0 18px}
+h1 span{color:var(--blue)}
+.hero-text{font-size:18px;line-height:1.75;color:var(--muted);max-width:690px}
+.actions{display:flex;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:14px 21px;border-radius:8px;font-weight:800;font-size:14px}
+.primary{background:var(--blue);color:#fff}
+.secondary{background:#fff;border:1px solid #cbdde8;color:#126ea7}
+.hero-panel{background:var(--navy);border-radius:20px;padding:38px;color:#fff;box-shadow:0 22px 55px rgba(11,31,51,.16)}
+.hero-panel .medical-mark{height:70px;width:70px;border-radius:18px;background:#173d58;display:grid;place-items:center;font-size:32px;margin-bottom:22px}
+.hero-panel h2{font-size:27px;margin:0 0 8px}
+.hero-panel p{color:#c6d5e1;font-size:14px;line-height:1.7}
+.hero-panel .line{height:1px;background:rgba(255,255,255,.13);margin:24px 0}
+.hero-panel small{color:#dce7ee}
+
+/* Sections */
+section{padding:88px 0}
+.alt{background:var(--light)}
+.section-head{text-align:center;max-width:720px;margin:0 auto 44px}
+.section-head h2{font-size:39px;line-height:1.15;color:var(--navy);margin:9px 0 13px}
+.section-head p{color:var(--muted);line-height:1.7}
+
+/* Product Cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 35px rgba(12,45,72,.08)}
+.icon{height:50px;width:50px;border-radius:12px;background:#e9f6fd;display:grid;place-items:center;font-size:24px;margin-bottom:18px}
+.card h3{font-size:18px;color:var(--navy);margin:0 0 10px}
+.card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{border:1px solid var(--line);padding:30px;border-radius:14px;background:#fff}
+.service-num{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:1px}
+.service h3{font-size:20px;color:var(--navy);margin:12px 0 8px}
+.service p{font-size:14px;line-height:1.7;color:var(--muted)}
+
+/* About */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about h2{font-size:40px;line-height:1.15;color:var(--navy);margin:12px 0 16px}
+.about p{color:var(--muted);line-height:1.8}
+.points{margin:25px 0 0;padding:0;list-style:none}
+.points li{margin:12px 0;color:#385065;font-weight:700}
+.points li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:10px}
+.info-box{background:#eef8fd;border-radius:20px;padding:38px}
+.info-box h3{color:var(--navy);font-size:25px;margin-top:0}
+.info-box p{color:var(--muted)}
+
+/* CTA */
+.cta-wrap{background:var(--navy);border-radius:20px;padding:48px;color:#fff}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.cta h2{font-size:35px;margin:0 0 8px}
+.cta p{color:#c8d6e2;margin:0}
+.cta .primary{background:#1594e5}
+
+/* Footer */
+footer{background:#071624;color:#a9bac8;padding:28px 0}
+.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.footer strong{color:#fff}
+.footer small{font-size:12px}
+
+/* Mobile */
+@media(max-width:900px){
+  .menu{display:block}
+  nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}
+  nav.open{display:flex}
+  .hero-grid,.about{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .services{grid-template-columns:1fr 1fr}
+  h1{font-size:46px}
+}
+@media(max-width:560px){
+  .cards,.services{grid-template-columns:1fr}
+  .hero{padding-top:60px}
+  h1{font-size:40px}
+  .actions{flex-direction:column}
+  .btn{text-align:center}
+  .cta{flex-direction:column;align-items:flex-start}
+  .footer{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Hassam <span>Shamsher</span></a>
+    <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">BIOMEDICAL ENGINEER</div>
+      <h1>Medical &amp; <span>Laboratory</span> Equipment Solutions</h1>
+      <p class="hero-text">
+        Professional biomedical and laboratory equipment solutions with a focus on service,
+        maintenance, technical support and reliable healthcare technology.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#products">Explore Products</a>
+        <a class="btn secondary" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="medical-mark">⚕</div>
+      <h2>Hassam Shamsher</h2>
+      <small>Biomedical Engineer</small>
+      <div class="line"></div>
+      <p>
+        Medical equipment • Laboratory equipment • Technical service •
+        Maintenance • Installation support
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">PRODUCT CATEGORIES</div>
+      <h2>Medical &amp; Laboratory Equipment</h2>
+      <p>Professional equipment categories for diagnostic laboratories and healthcare facilities.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">🩸</div>
+        <h3>Hematology Analyzers</h3>
+        <p>Laboratory solutions for routine hematology and CBC testing.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🧪</div>
+        <h3>Electrolyte Analyzers</h3>
+        <p>Electrolyte testing equipment with technical support options.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🔬</div>
+        <h3>Clinical Chemistry</h3>
+        <p>Clinical and special chemistry equipment solutions for laboratories.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">💧</div>
+        <h3>Medical Support Systems</h3>
+        <p>Biomedical support solutions for healthcare equipment and facilities.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">OUR SERVICES</div>
+      <h2>Technical Services</h2>
+      <p>Service-focused support for medical and laboratory equipment.</p>
+    </div>
+
+    <div class="services">
+      <div class="service">
+        <div class="service-num">01</div>
+        <h3>Installation &amp; Setup</h3>
+        <p>Professional equipment installation, setup and operational support.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">02</div>
+        <h3>Maintenance</h3>
+        <p>Preventive and corrective maintenance support for medical equipment.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">03</div>
+        <h3>Troubleshooting</h3>
+        <p>Technical diagnosis and troubleshooting assistance for equipment issues.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">04</div>
+        <h3>Calibration &amp; QC</h3>
+        <p>Calibration, quality-control and equipment performance support.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">05</div>
+        <h3>User Support</h3>
+        <p>Basic technical guidance and support for equipment users.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">06</div>
+        <h3>After-Sales Support</h3>
+        <p>Ongoing technical assistance and service coordination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="eyebrow">ABOUT</div>
+      <h2>Reliable support for healthcare technology.</h2>
+      <p>
+        Hassam Shamsher is a Biomedical Engineer focused on medical and laboratory
+        equipment solutions, technical service and customer support.
+      </p>
+      <ul class="points">
+        <li>Biomedical equipment support</li>
+        <li>Laboratory equipment solutions</li>
+        <li>Service &amp; maintenance support</li>
+        <li>Technical assistance for healthcare facilities</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h3>Professional Focus</h3>
+      <p>
+        Supporting laboratories, hospitals and healthcare facilities with
+        practical biomedical equipment solutions and service-oriented technical support.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-wrap">
+      <div class="cta">
+        <div>
+          <div class="eyebrow" style="color:#71cbff">GET IN TOUCH</div>
+          <h2>Need medical equipment support?</h2>
+          <p>Contact Hassam Shamsher — Biomedical Engineer.</p>
+        </div>
+        <a class="btn primary" href="mailto:hassamsatti222@gmail.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer">
+    <div><strong>Hassam Shamsher</strong><br><small>Biomedical Engineer</small></div>
+    <div><small>Medical &amp; Laboratory Equipment Solutions</small></div>
+  </div>
+</footer>
+
+</body>
+</html>
